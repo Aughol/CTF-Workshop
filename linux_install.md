@@ -84,3 +84,9 @@ Essentially there's little redeeming quality for dual-booting. You can just as e
 This is by far the easiest solution, as it simply involves installing some extra software. Currently, there are two VMs covered in this program: **VirtualBox** and **VMWare**
 
 #### VirtualBox
+
+#### VMWare
+
+### Method 2: Using a USB with Persistence
+
+### Method 3: Wiping a hard drive and clean installing the OS
