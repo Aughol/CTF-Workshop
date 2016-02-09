@@ -90,3 +90,5 @@ This is by far the easiest solution, as it simply involves installing some extra
 ### Method 2: Using a USB with Persistence
 
 ### Method 3: Wiping a hard drive and clean installing the OS
+
+### Which one is for you?
