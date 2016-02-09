@@ -9,15 +9,15 @@ The distros used in this guide are:
 * 	Ubuntu
 	
 The Installation methods we will cover are:
-* 	Installing the OS on a Virtual Machine (We will cover both VMWare and VirtualBox)
+* 	Installing the OS on a [Virtual Machine](http://wikipedia.org/Virtual_Machine) _(We will cover both VMWare and VirtualBox)
 * 	Installing the OS on a USB drive with Persistence enabled
 * 	Wiping the Hard Drive and performing a clean installation of the OS
 
-# What OS should you use?
+## What OS should you use?
 
 There are a lot of similarities between the two distros, however there are significant differences to both of them.
 
-## Ubuntu
+### Ubuntu
 
 Ubuntu was designed from the ground up to be an OS that is welcoming to newcomers and easy to install and use regularly.
 The releases are usually stable and tested, and the two versions of the distro have a guaranteed life cycle that range depending on the service version.
@@ -33,7 +33,7 @@ It also comes with its own software store, similar to that of MAC OS X.
 Basically, if you have intermediate to no experience with Linux, then you should get Ubuntu. 
 The version of the distro doesn't particularly matter, meaning it is your perogative depending on whether you prefer stability (14.04.3) or newness (15.10).
 
-## Kali Linux
+### Kali Linux
 
 Kali Linux is not made for beginners. Hell, it's not made for _intermediate_ users. 
 All operations are run as root, which is generally considered to be a terrible decision by other OS dev teams.
@@ -67,5 +67,20 @@ Helpful online community | Very unhelpful online community
 Command line and software store installation | Command line only installation
 Good for people who want general functionality | Good for people who are considering pentesing as a career
 
+## What method of installation do you want?
 
+Currently, the guide will only cover three ways of installing Linux for use. There is a fourth one, but...
 
+### Why isn't Dual-Boot installation covered?
+
+Because it breaks everything if you don't clean install **ALL** OSes first. It's rediculous, as Windows will freak out and run `chkdsk` on every. single. boot.
+
+Essentially there's little redeeming quality for dual-booting. You can just as easily use a USB with persistence to acheive the same benefits with added portability.
+
+**TL;DR** You really must want to break your computer.
+
+### Method 1: Using a Virtual Machine
+
+This is by far the easiest solution, as it simply involves installing some extra software. Currently, there are two VMs covered in this program: **VirtualBox** and **VMWare**
+
+#### VirtualBox
