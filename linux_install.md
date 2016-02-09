@@ -59,7 +59,7 @@ The latest version of Kali Linux is working, and is version 2016.1.
 
 [Kali Linux ISO Download Link](https://www.kali.org/downloads/)
 
-### 1.3 Which one is for you?
+### 1.3 Which OS is for you?
 
 Ubuntu | Kali
 ---|---
@@ -86,14 +86,51 @@ Essentially there's little redeeming quality for dual-booting. You can just as e
 
 ### 2.2 Using a Virtual Machine
 
-This is by far the easiest solution, as it simply involves installing some extra software. Currently, there are two VMs covered in this program: **VirtualBox** and **VMWare**
+This is by far the easiest solution, as it simply involves installing some extra software. Currently, there are two VMs covered in this program: **VirtualBox 5.0** and **VMWare Workstation/Fusion Pro**.
+If you have a mid-range or high-end laptop, this is probably your best choice.
+Keep in mind to watch how many resources you allocate to a VM.
 
-#### 2.2.1 VirtualBox
+#### 2.2.1 VirtualBox 5.0
 
-#### 2.2.2 VMWare
+VirtualBox is a product made by Oracle, the same company that currently develops the Java Language and Java Virtual Machine.
+Like many of their non-enterprise products, it is provided free of charge and can be downloaded and used by anyone with a semi-modern computer and an internet connection.
+It is a stable platform that can be used to run most operating systems that run on the same CPU architecture.
+
+VirtualBox has a separate add-on pack that adds a ton of functionality to VirtualBox and the Virtual Machines that are on it.
+These additions include 3D acceleration support, full screen support, and a virtual CD to add extra drivers/programs to run on VirtualBox more easily.
+
+VirtualBox is also released under the GPL 2 FOSS License, meaning that you can download the source code and compile it yourself, even work on it if you so choose.
+If you decide that you want to get into the FOSS development scene, then you may want to consider using VirtualBox to familiarize yourself with the environment.
+
+The latest version of VirtualBox is 5.0.14.
+
+[The VirtualBox Package and Extension Pack can be downloaded here.](https://www.virtualbox.org/wiki/Downloads)
+
+#### 2.2.2 VMWare Workstation/Fusion Pro
+
+VMWare is a product produced by... VMWare. It isn't open source, and is sold at a fairly high price.
+The basic price of VMWare Workstation 12 Pro is $250 for basic support and a lifetime license.
+VMWare Fusion 8 Pro costs $199 for the same terms.
+UCF does own multiple Dreamspark Premium stores that give you free yearly licenses that you can apply for each academic year.
+
+VMWare Workstation Pro performs remarkedly better than VirtualBox and has more features out of box. 
+Many utilities, such as fullscreen and USB support are better supported than VirtualBox.
+
+**We cannot provide a direct download link to VMWare as it is located in the Dreamspark Premium store. 
+You must sign into your account, select "VMWare," then "Software." Select *Workstation 12 Pro* for Windows and Linux systems and *Fusion 8 Pro* for Macintosh.**
+
+The latest version of VMWare Workstation (Windows\Linux) is 12, and the latest version of VMWare Fusion (Macintosh) is 8.
+
+#### 2.2.3 Which VM should you choose?
+
+#### 2.2.4 Will Hyper-V be covered in this guide?
+
+Yes, in the future this guide will cover Hyper-V installation. 
+This is because there are benefits of choosing natively supported Hyper-V over other VMs.
+Since Dreamspark Premium gives free permanent licenses for Windows 8.1 and 10 Pro and Enterprise (Education), Hyper-V will be covered in the same detail as the other VMs once the installation method is researched.
 
 ### 2.3 Using a USB with Persistence
 
 ### 2.4 Wiping a hard drive and clean installing the OS
 
-### 2.5 Which one is for you?
+### 2.5 Which install method is for you?
