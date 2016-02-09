@@ -17,7 +17,7 @@ The Installation methods we will cover are:
 
 There are a lot of similarities between the two distros, however there are significant differences to both of them.
 
-### 1.1\ Ubuntu
+### 1.1 Ubuntu
 
 Ubuntu was designed from the ground up to be an OS that is welcoming to newcomers and easy to install and use regularly.
 The releases are usually stable and tested, and the two versions of the distro have a guaranteed life cycle that range depending on the service version.
@@ -35,7 +35,7 @@ The version of the distro doesn't particularly matter, meaning it is your peroga
 
 [Ubuntu ISO Download Link](http://www.ubuntu.com/download/desktop)
 
-### 1.2\. Kali Linux
+### 1.2 Kali Linux
 
 Kali Linux is not made for beginners. Hell, it's not made for _intermediate_ users. 
 All operations are run as root, which is generally considered to be a terrible decision by other OS dev teams.
@@ -59,7 +59,7 @@ The latest version of Kali Linux is working, and is version 2016.1.
 
 [Kali Linux ISO Download Link](https://www.kali.org/downloads/)
 
-### 1.3\. Which one is for you?
+### 1.3 Which one is for you?
 
 Ubuntu | Kali
 ---|---
@@ -76,7 +76,7 @@ Better Stability Record | Occasionally releases bad ISOs
 
 Currently, the guide will only cover three ways of installing Linux for use. There is a fourth one, but...
 
-### 2.1\. Why isn't Dual-Boot installation covered?
+### 2.1 Why isn't Dual-Boot installation covered?
 
 Because it breaks everything if you don't clean install **ALL** OSes first. It's rediculous, as Windows will freak out and run `chkdsk` on every. single. boot.
 
@@ -84,16 +84,16 @@ Essentially there's little redeeming quality for dual-booting. You can just as e
 
 **TL;DR** You really must want to break your computer.
 
-### 2.2\. Using a Virtual Machine
+### 2.2 Using a Virtual Machine
 
 This is by far the easiest solution, as it simply involves installing some extra software. Currently, there are two VMs covered in this program: **VirtualBox** and **VMWare**
 
-#### 2.2.1\. VirtualBox
+#### 2.2.1 VirtualBox
 
-#### 2.2.2\. VMWare
+#### 2.2.2 VMWare
 
-### 2.3\. Using a USB with Persistence
+### 2.3 Using a USB with Persistence
 
-### 2.4\. Wiping a hard drive and clean installing the OS
+### 2.4 Wiping a hard drive and clean installing the OS
 
-### 2.5\. Which one is for you?
+### 2.5 Which one is for you?
