@@ -33,6 +33,8 @@ It also comes with its own software store, similar to that of MAC OS X.
 Basically, if you have intermediate to no experience with Linux, then you should get Ubuntu. 
 The version of the distro doesn't particularly matter, meaning it is your perogative depending on whether you prefer stability (14.04.3) or newness (15.10).
 
+[Ubuntu ISO Download Link](http://www.ubuntu.com/download/desktop)
+
 ### Kali Linux
 
 Kali Linux is not made for beginners. Hell, it's not made for _intermediate_ users. 
@@ -55,6 +57,8 @@ All versions are based on Debian, so similar to Ubuntu, you can use the `apt-get
 Kali does not come with the Ubuntu Software Store for obvious reasons.
 The latest version of Kali Linux is working, and is version 2016.1.
 
+[Kali Linux ISO Download Link](https://www.kali.org/downloads/)
+
 ### Which one is for you?
 
 Ubuntu | Kali
@@ -66,6 +70,7 @@ Easier to install | More difficult to install
 Helpful online community | Very unhelpful online community
 Command line and software store installation | Command line only installation
 Good for people who want general functionality | Good for people who are considering pentesing as a career
+Better Stability Record | Occasionally releases bad ISOs
 
 ## What method of installation do you want?
 
