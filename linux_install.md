@@ -9,7 +9,7 @@ The distros used in this guide are:
 * 	Ubuntu
 	
 The Installation methods we will cover are:
-* 	Installing the OS on a [Virtual Machine](http://wikipedia.org/Virtual_Machine) _(We will cover both VMWare and VirtualBox)
+* 	Installing the OS on a [Virtual Machine](http://wikipedia.org/Virtual_Machine)_ (We will cover both VMWare and VirtualBox)
 * 	Installing the OS on a USB drive with Persistence enabled
 * 	Wiping the Hard Drive and performing a clean installation of the OS
 
@@ -88,7 +88,7 @@ Essentially there's little redeeming quality for dual-booting. You can just as e
 
 This is by far the easiest solution, as it simply involves installing some extra software. 
 Currently, there are three hypervisors (thing that makes and runs VMs) covered in this program: *Oracle VirtualBox 5.0*, *Microsoft Hyper-V* and *VMWare Workstation/Fusion Pro*.
-If you have a mid-range or high-end laptop, this is probably your best choice.
+If you have a mid-range or high-end laptop, using a VM is probably your best choice.
 Keep in mind to watch how many resources you allocate to a VM.
 
 #### 2.2.1 Oracle VirtualBox 5.0
@@ -168,6 +168,67 @@ RDP Encryption with Extension Pack | (Unknown Method of) Encryption out of the B
 \*\*The product keys for the Pro and Enterprise/Education versions of Windows 8, 8.1, and 10 can be found for free in the Dreamspark Premium store.
 
 ### 2.3 Using a USB with Persistence
+
+Typically, this is the next best option for people who want to run a Linux/GNU OS but for some reason cannot use a VM.
+
+It could be that:
+*	Your computer is not powerful enough to run a VM.
+*	Your computer is too low-end or too old to support hardware acceleration.
+*	Some other program is preventing VMs to run.
+*	Unsolvable VM error.
+*	Not enough hard drive space for a VM.
+*	You want to utilize *all* of your computer's resources for running Linux.
+*	You want a portable OS
+*	etc.
+
+Simply put, this option will in essence turn your USB into a small, bootable hard drive that you can plug into any computer and boot off of it.
+This allows you to bypass the hypervisor and host OS of a VM setup, allowing your Linux build to use more resources and perform faster.
+USB builds are completely portable, and there are just a few pieces of software needed.
+
+#### 2.3.1 Required Software for Making a Persistant Linux USB on Windows
+
+*	[PenDrive Linux -- Universal USB Installer](http://www.pendrivelinux.com/downloads/Universal-USB-Installer/Universal-USB-Installer-1.9.6.3.exe)
+*	[MiniTool Partition Wizard -- Disk Partitioner](http://download.cnet.com/MiniTool-Partition-Wizard-Free-Edition/3001-2094_4-10962200.html?hlndr=1&part=dl-)_
+
+*Universal USB Installer* will format a USB that is plugged in, and copy the contents of a provided ISO file. At the end of the process, the USB will be bootable without persistence.  
+*Partition Wizard* will partition the USB so that the second partition can be used as persistant space.
+
+#### 2.3.2 Required Software for Making a Persistant Linux USB on Windows
+
+All software needed for a USB install comes already in Linux, but for the sake of clarity:  
+*	`dd` Terminal command
+*	GParted Disk Partitioner
+
+The syntax for the `dd` command will be given and explained later, but it simply erases the content of a drive/folder and overwrites it with the content of a folder/ISO.  
+*GParted* will partition the drive, a step that's needed to enable persistence.
+
+#### 2.3.3 Reccomended Hardware
+
+Obviously any computer that supports booting from USB will do, however the USB itself needs to be a certain size.  
+*	A USB running Ubuntu should have at least **8 GB of space minimum.**
+*	A USB running Kali should have at least **16 GB of space minimum.**
+
+Be forewarned that **ALL DATA PREVIOUSLY STORED ON THE USB WILL BE LOST FOREVER ONCE INSTALLATION BEGINS.** Make sure to back your data up.
+
+Also keep in mind that **YOUR USB DRIVE'S PERSISTENT SPACE WILL BE RENDERED UNREADABLE TO WINDOWS.** So don't count on transferring data to and from your Windows hard drive.
+
+#### 2.3.4 Security Concerns
+
+USB Persistence is by no means more secure than using a VM.
+People running Windows 7 or earlier will find that their USB OS has the ability to read and write to the hard drive without Windows being active.
+Normally this wouldn't be a problem, but this obviously opens up security problems.
+
+If you run computers that came with Windows 8 or later, you will have noticed that Secure Boot is running on your computer.
+Secure Boot keeps the user from being able to access BIOS or the Boot Options menu, effectively barring them from being able to boot from the USB.
+Secure Boot can be disabled, but by the same terms, anyone with bootable media can use your computer.
+
+Interestingly enough, another addition to Windows 8+ is the addition of *Hybrid Shutdown*. 
+This is why boot times between 7 and 8/8.1, long with 8/8.1 and 10 have decreased significantly; 
+the computer enters a state where much of the software shuts down, except for a few components that stay active.
+This allows Windows to boot very quickly, by keeping certain parts active, and shutting others (like those with pending updates) down.
+
+*Hybrid Shutdown* has an unintended side effect; it forces any Linux OS that is booted to either reject mounting the Windows drive, or forces it into mounting it as read only.
+With this in mind, it makes sense to say that security concerns over booting from USB to be significantly diminished if your computer runs Windows 8, 8.1, or 10.
 
 ### 2.4 Wiping a hard drive and clean installing the OS
 
