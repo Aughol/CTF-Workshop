@@ -275,3 +275,80 @@ Cannot Make Computer Unusable | Cannot Make Computer Unusable | Can Rarely Make 
 Keep Personal Data | Must Erase Personal Data on USB | Must Erase Personal Data on Hard Drive
 Keep Secure Boot Enabled | Must Disable Secure Boot | Must Disable Secure Boot
 Must Download Software to Use | Must Download Software to Use | Can Use Tools that Come with OS
+
+# 3\. Installation Instructions
+
+## 3.1 Instructions for Making a VM
+
+**The required items for this section is:**  
+*	The Hypervisor of your choice.
+*	The ISO file of the OS of your choice.
+
+This section assumes you have been able to install the hypervisor of your choice correctly.
+
+### 3.1.1 Making a VM in VirtualBox
+
+#### For Ubuntu:
+
+##### Installing the Guest Additions
+
+##### Creating the Virtual Machine
+
+##### Installing the OS on the Virtual Machine
+
+##### Logging in for the First Time
+
+#### For Kali Linux:
+
+##### Installing the Guest Additions
+
+##### Creating the Virtual Machine
+
+##### Installing the OS on the Virtual Machine
+
+##### Logging in for the First Time
+
+### 3.1.2 Making a VM in VMWare
+
+#### For Ubuntu:
+
+##### Creating the Virtual Machine
+
+##### Installing the OS on the Virtual Machine
+
+##### Logging in for the First Time
+
+#### For Kali Linux:
+
+##### Creating the Virtual Machine
+
+##### Installing the OS on the Virtual Machine
+
+##### Logging in for the First Time
+
+### 3.1.3 Making a VM in Hyper-V
+
+#### For Ubuntu
+
+##### Creating the Virtual Machine and Disabling Security
+
+##### Installing the OS on the Virtual Machine
+
+##### Logging in for the First Time
+
+#### For Kali Linux:
+
+##### Creating the Virtual Machine and Disabling Security
+
+##### Installing the OS on the Virtual Machine
+
+##### Logging in for the First Time
+
+## 3.2 Making a Bootable USB with Persistence
+
+**The required items for this section is:**  
+*	A USB of appropriate size (8GB for Ubuntu, 16GB for Kali Linux)
+*	(Windows Only) Partition Wizard Disk Partitioner
+*	(Windows Only) PenDrive Linux Universal USB Installer
+
+### Using Windows to Install:
