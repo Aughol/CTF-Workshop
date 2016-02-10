@@ -116,11 +116,18 @@ UCF does own multiple Dreamspark Premium stores that give you free yearly licens
 VMWare Workstation Pro performs remarkedly better than VirtualBox and has more features out of box. 
 Many utilities, such as fullscreen and USB support are better supported than VirtualBox.
 
+The latest version of VMWare Workstation (Windows\Linux) is 12, and the latest version of VMWare Fusion (Macintosh) is 8.
+
+*A note about some recent news involving VMWare, inc.*  
+VMWare has recently fired the entirety of its developers working on Workstation and Fusion who happen to live in the United States.
+This was due to a restructuring effort, as the company deemed the US developers were not worth the cost, and have decided to move the development effort into another country.
+VMWare has confirmed that they are not axing the Workstation/Fusion product line. 
+Many people have echoed the sentiment that they're killing the whole product, which is simply untrue.
+It is possible that the quality of the product may dip, but it still currently performs better than VirtualBox.
+
 **We cannot provide a direct download link to VMWare as it is located in the Dreamspark Premium store. 
 You must sign into your account, select "VMWare," then "Software." Select *Workstation 12 Pro* for Windows and Linux systems and *Fusion 8 Pro* for Macintosh.
 If you have no Dreamspark Premium account then search your Knights email for a message that allows you to sign up. It's worth the effort.**
-
-The latest version of VMWare Workstation (Windows\Linux) is 12, and the latest version of VMWare Fusion (Macintosh) is 8.
 
 #### 2.2.3 Which VM should you choose?
 
