@@ -87,7 +87,7 @@ Essentially there's little redeeming quality for dual-booting. You can just as e
 ### 2.2 Using a Virtual Machine
 
 This is by far the easiest solution, as it simply involves installing some extra software. 
-Currently, there are three hypervisors (thing that makes and runs VMs) covered in this program: **Oracle VirtualBox 5.0**, **Microsoft Hyper-V** and **VMWare Workstation/Fusion Pro**.
+Currently, there are three hypervisors (thing that makes and runs VMs) covered in this program: *Oracle VirtualBox 5.0*, *Microsoft Hyper-V* and *VMWare Workstation/Fusion Pro*.
 If you have a mid-range or high-end laptop, this is probably your best choice.
 Keep in mind to watch how many resources you allocate to a VM.
 
@@ -141,7 +141,7 @@ It is considered a feature and is therefore already part of Windows.
 It needs to be activated by turning the feature on under the "Programs and Features" section of Control Panel.
 
 If you are ever considering developing apps using the Universal Windows Application (UWA) standard, it is likely you'll have to install this to emulate Windows phones so that your application meets specifications.
-However, it is important to note that **activating Hyper-V will lock all other applications out of using your computer's virtualization (vt-x/amd-v) hardware and will cause all other 64-bit VMs to stop working until Hyper-V is disabled.**
+However, it is important to note that **activating Hyper-V will lock all other applications out of using your computer's virtualization (vt-x/amd-v) abilities and will cause all other 64-bit VMs to stop working until Hyper-V is disabled.**
 This means that if you use applications that rely on 64-bit VMs not used by Hyper-V to work, you are unable to use them until you disable Hyper-V, which requires a reboot.
 
 The latest version of Hyper-V is 10.0.10586.0, which mirrors the Windows 10 consumer version number. 
