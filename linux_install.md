@@ -351,4 +351,4 @@ This section assumes you have been able to install the hypervisor of your choice
 *	(Windows Only) Partition Wizard Disk Partitioner
 *	(Windows Only) PenDrive Linux Universal USB Installer
 
-### Using Windows to Install:
+### 3.2.1 Using Windows to Install:
