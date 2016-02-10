@@ -86,11 +86,12 @@ Essentially there's little redeeming quality for dual-booting. You can just as e
 
 ### 2.2 Using a Virtual Machine
 
-This is by far the easiest solution, as it simply involves installing some extra software. Currently, there are two VMs covered in this program: **VirtualBox 5.0** and **VMWare Workstation/Fusion Pro**.
+This is by far the easiest solution, as it simply involves installing some extra software. 
+Currently, there are three hypervisors (thing that makes and runs VMs) covered in this program: **Oracle VirtualBox 5.0**, **Microsoft Hyper-V** and **VMWare Workstation/Fusion Pro**.
 If you have a mid-range or high-end laptop, this is probably your best choice.
 Keep in mind to watch how many resources you allocate to a VM.
 
-#### 2.2.1 VirtualBox 5.0
+#### 2.2.1 Oracle VirtualBox 5.0
 
 VirtualBox is a product made by Oracle, the same company that currently develops the Java Language and Java Virtual Machine.
 Like many of their non-enterprise products, it is provided free of charge and can be downloaded and used by anyone with a semi-modern computer and an internet connection.
@@ -129,13 +130,42 @@ It is possible that the quality of the product may dip, but it still currently p
 You must sign into your account, select "VMWare," then "Software." Select *Workstation 12 Pro* for Windows and Linux systems and *Fusion 8 Pro* for Macintosh.
 If you have no Dreamspark Premium account then search your Knights email for a message that allows you to sign up. It's worth the effort.**
 
-#### 2.2.3 Which VM should you choose?
+#### 2.2.3 Microsoft Hyper-V
 
-#### 2.2.4 Will Hyper-V be covered in this guide?
+Hyper-V is a product designed by Microsoft and is slightly more powerful than VMWare. 
+It allows for an extreme amount of customizability and supports features such as dynamic RAM allocation, virtual Secure Boot, and TPM encryption.
+Like VMWare and VirtualBox, Hyper-V can run VMs in the background.
 
-Yes, in the future this guide will cover Hyper-V installation. 
-This is because there are benefits of choosing natively supported Hyper-V over other VMs.
-Since Dreamspark Premium gives free permanent licenses for Windows 8.1 and 10 Pro and Enterprise (Education), Hyper-V will be covered in the same detail as the other VMs once the installation method is researched.
+Hyper-V only comes packaged with any Windows Server past 2008, and with any version of Windows 8/8.1/10 that runs the Pro or Enterprise/Education tier.
+It is considered a feature and is therefore already part of Windows. 
+It needs to be activated by turning the feature on under the "Programs and Features" section of Control Panel.
+
+If you are ever considering developing apps using the Universal Windows Application (UWA) standard, it is likely you'll have to install this to emulate Windows phones so that your application meets specifications.
+However, it is important to note that **activating Hyper-V will lock all other applications out of using your computer's virtualization (vt-x/amd-v) hardware and will cause all other 64-bit VMs to stop working until Hyper-V is disabled.**
+This means that if you use applications that rely on 64-bit VMs not used by Hyper-V to work, you are unable to use them until you disable Hyper-V, which requires a reboot.
+
+The latest version of Hyper-V is 10.0.10586.0, which mirrors the Windows 10 consumer version number. 
+Expect it to change once the announced Windows 10 RedStone-1 (RS1) update gets released this Summer.
+
+**We cannot provide a download link as it is a feature pre-built into Windows. 
+If you want it, get a Pro or Enterprise/Education edition of Windows 8, 8.1, or 10 from the Dreamspark Premium store for free.
+After upgrading, enable it in the features menu of the "Programs and Features" applet in the Control Panel.**
+
+#### 2.2.4 Which VM should you choose?
+
+VirtualBox | VMWare | Hyper-V
+---|---|---
+Download | Download | Pre-Built into Windows 8+ Non-Home editions
+Open-Source | Proprietary | Proprietary
+Linux/OSX/Windows Versions | Linux/OSX/Windows Versions | Windows Exclusive
+Free | $200-$250\* | Cost of OS\*\*
+Cannot run x64 OSes with Hyper-V enabled | Cannot run x64 OSes with Hyper-V enabled | N/A
+Slower than VMWare/Hyper-V | Performs as fast as Hyper-V | Performs as fast as VMWare
+Stable Releases | Questionable quality in the future | Stable Releases
+RDP Encryption with Extension Pack | (Unknown Method of) Encryption out of the Box | Secure Boot / TPM Encryption Avaliable
+
+\*Yearly licenses VMWare Workstation/Fusion Pro can be freely taken from Dreamspark Premium in lieu of the ~$250 permanent license.  
+\*\*The product keys for the Pro and Enterprise/Education versions of Windows 8, 8.1, and 10 can be found for free in the Dreamspark Premium store.
 
 ### 2.3 Using a USB with Persistence
 
