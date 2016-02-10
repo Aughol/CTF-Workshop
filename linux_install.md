@@ -223,7 +223,7 @@ Secure Boot keeps the user from being able to access BIOS or the Boot Options me
 Secure Boot can be disabled, but by the same terms, anyone with bootable media can use your computer.
 
 Interestingly enough, another addition to Windows 8+ is the addition of *Hybrid Shutdown*. 
-This is why boot times between 7 and 8/8.1, long with 8/8.1 and 10 have decreased significantly; 
+This is why boot times between 7 and 8/8.1, along with 8/8.1 and 10 have decreased significantly; 
 the computer enters a state where much of the software shuts down, except for a few components that stay active.
 This allows Windows to boot very quickly, by keeping certain parts active, and shutting others (like those with pending updates) down.
 
@@ -232,4 +232,46 @@ With this in mind, it makes sense to say that security concerns over booting fro
 
 ### 2.4 Wiping a hard drive and clean installing the OS
 
+This option is best for people who have an extra laptop lying around somewhere. 
+It's fairly self-explanatory, you're just erasing the contents of the hard drive and installing the new OS where Windows used to be.
+This process results in a computer that can run Linux without any VM or bootable medium. 
+You press the power button and the computer immediately loads into whatever distro you installed.
+
+Technically, this could be considered the most secure option, as it requires the wiping of all personal data.
+
+#### 2.4.1 Hardware Requirements
+
+There's two hardware requirements, mainly your computer and a bootable device containing a Linux installation media:  
+*	If you want to use a USB device for installation, your USB drive must be at least 4GB for Ubuntu and 8GB for Kali.
+*	If you want to use a DVD for installation, your DVD must be blank (if not a DVD-RW or DVD+RW) and over 3GB in size.
+
+Similar to USB Persistence requirements, if you want to install Linux on your hard drive, you *must* disable Secure Boot.
+This option is generally found in computers that came with Windows 8 and later.
+
+#### 2.4.2 Warnings before Choosing this Option
+
+It should go without saying, but **wiping your hard drive will result in the lost of ALL data on the drive.** 
+Not only will the disk be formatted, but the file system itself will change, and any data will be lost forever.
+
+Another warning is that **while Linux distros generally have stable releases, occasionally something can flub up and result in the temporary or permanent inability to use the computer.**
+Sometimes, a bad header can be shipped, and break the graphics driver. Other times, the window manager simply stops. 
+It's very rare for these to happen, especially with modern Linux distributions.
+However, it can still happen and it still does happen. 
+Most of the time, this can be solved by getting a slightly older version of an OS, using a different distro, or if you know your way around Linux you can try to fix it yourself.
+Generally, a permanent break is fairly difficult to acheive, so it's only there for the sake of a disclaimer.
+
 ### 2.5 Which install method is for you?
+
+Virtual Machine | USB with Persistence | Wiping Hard Drive and Installing
+---|---|---
+Least Effort to Make | Hardest to Make | Medium Effort to Make
+Works as OS Layer | Interfaces with Hardware | Interfaces with Hardware
+Slowest | Second Fastest | Fastest
+Sometimes portable | Completely Portable | Not Portable
+Fairly Secure | Less Secure | Most Secure
+Needs ISO only | Needs ISO and USB | Needs ISO and USB/DVD
+Can use Windows | Can use Windows | Must erase Windows
+Cannot Make Computer Unusable | Cannot Make Computer Unusable | Can Rarely Make Computer Unusable
+Keep Personal Data | Must Erase Personal Data on USB | Must Erase Personal Data on Hard Drive
+Keep Secure Boot Enabled | Must Disable Secure Boot | Must Disable Secure Boot
+Must Download Software to Use | Must Download Software to Use | Can Use Tools that Come with OS
