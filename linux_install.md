@@ -9,7 +9,7 @@ The distros used in this guide are:
 * 	Ubuntu
 	
 The Installation methods we will cover are:
-* 	Installing the OS on a [Virtual Machine](http://wikipedia.org/Virtual_Machine)_ (We will cover both VMWare and VirtualBox)
+* 	Installing the OS on a [Virtual Machine](http://wikipedia.org/Virtual_Machine)_ (We will cover VMWare, Hyper-V, and VirtualBox)
 * 	Installing the OS on a USB drive with Persistence enabled
 * 	Wiping the Hard Drive and performing a clean installation of the OS
 
@@ -292,21 +292,112 @@ This section assumes you have been able to install the hypervisor of your choice
 
 ##### Installing the Guest Additions
 
+The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.
+
+1	Download the *VirtualBox Extension Pack*. The download link can be found in Section 2.2.1.
+2	Launch VirtualBox, Select *File*, then *Preferences*, *Extension*, and *Add New* (small blue box with yellow arrow).
+3	Browse the File System until you find the pack you just downloaded, then select it.
+4	A Dialog box will warn you Extension packs can be harmful. Click *Install*.
+5	Select *OK* to exit the preferences window.
+
 ##### Creating the Virtual Machine
+
+These steps create the Virtual Machine that will soon run the OS.
+
+1	Select *New* up at the top-left.
+2	Name it whatever you want, but naming it "Ubuntu" will auto-config the setting of that screen.
+3	If you didn't auto-config, select *Linux* from the first drop-down list, then *Ubuntu 32/64 bit* from the second. Click *Next*.
+4	On this screen, you'll allocate RAM for the VM. *1GB is the absolute minimum, but it is reccomended to allocate 2GB to 4GB if you can*. Click *Next*.
+5	This screen allows you to decide if you want to allocate Hard Drive space via a Virtual Hard Drive. Select *Create a Virtual Hard Disk Now*, then click *Create*.
+6	Select *VDI (VirtualBox Disk Image)*, then *Next*.
+7	If you want slightly better performance, select *Fixed Size*. Otherwise, leave it at *Dynamically Allocated*. Click *Next*.
+8	Adjust the slider to the amount of hard drive space you want the VM to have. *You must have at least 8GB, though 20GB is reccomended.* Click *Create*.
 
 ##### Installing the OS on the Virtual Machine
 
+By now, the new VM should appear on the main window. However, there's no OS on it, making it unusable. Let's fix that.  
+*By now you should have downloaded your ISO. Don't continue the instructions until it is completely downloaded.*
+
+1	Select the newly added VM, then select *Start*.
+2 	A prompt will appear asking for the location of the "Start up Disk." Direct the prompt to the location of the ISO file and then select *Start*.
+3	It may take a moment for the GUI to fully appear. As it does, make sure *English* is selected from the left panel, then click *Install Ubuntu*.
+4	If the VM is connected to the Internet (it should have automatically done that), select *Download Updates while Installing*. Choosing *Install Third-Party Software* is optional. Click *Continue*.
+5	Select *Erase Disk and Install Ubuntu*. Click *Continue*.
+6	Select the Time Zone you live in. Click *Continue*.
+7	Select the configuration of your keyboard. It should be *English (US)* and *English (US)* as default. Click *Continue*.
+8	Set your Name (doesn't have to be real), username, and password. Click *Continue*.
+9	Wait for the installation to finish. Once it has, select *Restart Now*.
+
 ##### Logging in for the First Time
+
+At this point the OS is fully installed on the VM and now should boot into Ubuntu when launched.
+
+1 	Select the VM that you just installed the OS on, then click *Start*.
+2 	Wait for the GUI to load, then enter your username you set, and the corresponding password.
+
+At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
 
 #### For Kali Linux:
 
 ##### Installing the Guest Additions
 
+The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.
+
+1	Download the *VirtualBox Extension Pack*. The download link can be found in Section 2.2.1.
+2	Launch VirtualBox, Select *File*, then *Preferences*, *Extension*, and *Add New* (small blue box with yellow arrow).
+3	Browse the File System until you find the pack you just downloaded, then select it.
+4	A Dialog box will warn you Extension packs can be harmful. Click *Install*.
+5	Select *OK* to exit the preferences window.
+
 ##### Creating the Virtual Machine
+
+These steps create the Virtual Machine that will soon run the OS.
+
+1	Select *New* up at the top-left.
+2	Name it whatever you want, but there's no auto-detect for "Kali."
+3	Select *Linux* from the first drop-down list, then *Debian* from the second. Click *Next*.
+4	On this screen, you'll allocate RAM for the VM. *1GB is the absolute minimum, but it is reccomended to allocate 2GB to 4GB if you can*. Click *Next*.
+5	This screen allows you to decide if you want to allocate Hard Drive space via a Virtual Hard Drive. Select *Create a Virtual Hard Disk Now*, then click *Create*.
+6	Select *VDI (VirtualBox Disk Image)*, then *Next*.
+7	If you want slightly better performance, select *Fixed Size*. Otherwise, leave it at *Dynamically Allocated*. Click *Next*.
+8	Adjust the slider to the amount of hard drive space you want the VM to have. *You must have at least 10GB, though 20GB is reccomended.* Click *Create*.
 
 ##### Installing the OS on the Virtual Machine
 
+By now, the new VM should appear on the main window. However, there's no OS on it, making it unusable. Let's fix that.  
+*By now you should have downloaded your ISO. Don't continue the instructions until it is completely downloaded.*
+
+1	Select the newly added VM, then select *Start*.
+2 	A prompt will appear asking for the location of the "Start up Disk." Direct the prompt to the location of the ISO file and then select *Start*.
+3 	A splash screen will appear, with a list of options. Select *Graphical Install*, then press enter.
+4 	Once the GUI comes up, select *English*, then click *Continue*.
+5 	Select your country (*United States*), then click *Continue*.
+6	Select your keyboards map (*American English*), then click *Continue*.
+7	After some component loading, type in your computers Hostname. This is inconsequential, so name it whatever you want. Click *Continue*.
+8 	Set the root password, then click *Continue*.
+9	If a screen appears, asking for a Time Zone, select *Eastern*, then click *Continue*.
+10	A list of installation options will appear. Select *Guided - Use entire Disk*, then click *Continue*.
+11 	There's only one item in the list for installing the OS. Select it, then click *Continue*.
+12	Select *All Files in One Partition (Reccomended for New Users)*, then click *Continue*.
+13	Do not change any of the settings, click *Continue*.
+14	Confirm the Virtual Hard Disk changes by selecting *Yes*. Click *Continue*.
+15	The installation will now begin, after it's completed, select *Yes* for network downloading.
+16 	If you have any proxy info, enter it there. If not, leave it blank. Click *Continue*.
+17	Select *Yes* to install GRUB, then click *Continue*.
+18	In the next list, there should be only one item besides *Enter Device Manually*. Select it (it should look similar to */dev/sda (gibberish)*). Click *Continue*.
+19	The next screen should notify you that the installation is completed. Click *Continue*.
+20 	The VM will automatically reboot.
+
 ##### Logging in for the First Time
+
+At this point the OS is fully installed on the VM and now should boot into Ubuntu when launched.
+
+1 	Select the VM that you just installed the OS on, then click *Start*.
+2 	Select *Kali GNU/Linux* from the GRUB menu or simply wait for the computer to do it for you.
+3 	Wait for the GUI to appear, then enter *root* as the username. Click *Next*.
+4 	Enter the password you set during install. Then select *Sign In*.
+
+At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
 
 ### 3.1.2 Making a VM in VMWare
 
