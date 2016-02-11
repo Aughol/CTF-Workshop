@@ -164,7 +164,7 @@ Slower than VMWare/Hyper-V | Performs as fast as Hyper-V | Performs as fast as V
 Stable Releases | Questionable quality in the future | Stable Releases
 RDP Encryption with Extension Pack | (Unknown Method of) Encryption out of the Box | Secure Boot / TPM Encryption Avaliable
 
-\*Yearly licenses VMWare Workstation/Fusion Pro can be freely taken from Dreamspark Premium in lieu of the ~$250 permanent license.  
+\*Yearly licenses for VMWare Workstation/Fusion Pro can be freely taken from Dreamspark Premium in lieu of the ~$250 permanent license.  
 \*\*The product keys for the Pro and Enterprise/Education versions of Windows 8, 8.1, and 10 can be found for free in the Dreamspark Premium store.
 
 ### 2.3 Using a USB with Persistence
@@ -347,8 +347,116 @@ This section assumes you have been able to install the hypervisor of your choice
 ## 3.2 Making a Bootable USB with Persistence
 
 **The required items for this section is:**  
-*	A USB of appropriate size (8GB for Ubuntu, 16GB for Kali Linux)
-*	(Windows Only) Partition Wizard Disk Partitioner
-*	(Windows Only) PenDrive Linux Universal USB Installer
+*	A USB of appropriate size (8GB for Ubuntu, 16GB for Kali Linux).
+*	(Windows Only) Partition Wizard Disk Partitioner.
+*	(Windows Only) PenDrive Linux Universal USB Installer.
+*	The ISO file of the OS of your choice.
 
 ### 3.2.1 Using Windows to Install:
+
+#### Disabling Secure Boot
+
+##### If your Computer Came with Windows 7 or Earlier:
+
+##### If your Computer Shipped with Windows 8 or Later:
+
+**For Windows 8:**  
+Instructions
+
+**For Windows 8.1:**  
+Instructions
+
+**For Windows 10:**  
+Instructions
+
+#### For Ubuntu:
+
+##### Installing the OS on a USB
+
+##### Enabling Persistence
+
+##### Using your USB
+
+#### For Kali Linux:
+
+##### Installing the OS on a USB
+
+##### Enabling Persistence
+
+##### Using your USB
+
+### 3.2.2 Using Linux to Install
+
+#### For Ubuntu:
+
+##### Installing the OS on a USB
+
+##### Enabling Persistence
+
+##### Using your USB
+
+#### For Kali Linux:
+
+##### Installing the OS on a USB
+
+##### Enabling Persistence
+
+##### Using your USB
+
+## 3.3 Wiping the Hard Drive and Installing the OS
+
+**The required items for this section is:**  
+*	A blank DVD-R/DVD+R, a reusable DVD-RW/DVD+RW, or a USB Drive.
+*	The ISO file of the OS of your choice.
+*	(For USB Install on Windows) PenDrive Linux Universal USB Installer.
+
+### 3.3.1 Creating the Installer on Windows
+
+#### Disabling Secure Boot
+
+##### If your Computer Came with Windows 7 or Earlier:
+
+##### If your Computer Shipped with Windows 8 or Later:
+
+**For Windows 8:**  
+Instructions
+
+**For Windows 8.1:**  
+Instructions
+
+**For Windows 10:**  
+Instructions
+
+#### For Ubuntu:
+
+##### For DVD:
+
+##### For USB:
+
+#### For Kali Linux:
+
+##### For DVD:
+
+##### For USB:
+
+### 3.3.2 Creating the Installer on Linux
+
+#### For Ubuntu:
+
+##### For DVD:
+
+##### For USB:
+
+#### For Kali Linux:
+
+##### For DVD:
+
+##### For USB:
+
+### 3.3.3 Installing the OS
+
+#### For Ubuntu:
+
+#### For Kali Linux:
+
+## 4\. Final Notes?
