@@ -461,8 +461,8 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 
 ***These next settings are only doable if you opted to make a Generation 2 VM. Skip these if you made a Generation 1 VM.***  
 
-(12)	After the process completes, select the VM from the center panel, then click *Settings...* on the right panel.
-(13)	Select *Security* from the side panel, then uncheck the box that says *Enable Secure Boot*. Click *OK*.
+12.	After the process completes, select the VM from the center panel, then click *Settings...* on the right panel.
+13.	Select *Security* from the side panel, then uncheck the box that says *Enable Secure Boot*. Click *OK*.
 
 ##### Installing the OS on the Virtual Machine
 
