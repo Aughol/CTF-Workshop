@@ -202,7 +202,7 @@ All software needed for a USB install comes already in Linux, but for the sake o
 The syntax for the `dd` command will be given and explained later, but it simply erases the content of a drive/folder and overwrites it with the content of a folder/ISO.  
 *GParted* will partition the drive, a step that's needed to enable persistence.
 
-#### 2.3.3 Reccomended Hardware
+#### 2.3.3 recommended Hardware
 
 Obviously any computer that supports booting from USB will do, however the USB itself needs to be a certain size.  
 *	A USB running Ubuntu should have at least **8 GB of space minimum.**
@@ -292,7 +292,7 @@ Must Download Software to Use | Must Download Software to Use | Can Use Tools th
 
 ##### Installing the Guest Additions
 
-*The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.*
+*The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is recommended you install it.*
 
 1.	Download the *VirtualBox Extension Pack*. The download link can be found in Section 2.2.1.
 2.	Launch VirtualBox, Select *File*, then *Preferences*, *Extension*, and *Add New* (small blue box with yellow arrow).
@@ -307,11 +307,11 @@ Must Download Software to Use | Must Download Software to Use | Can Use Tools th
 1.	Select *New* up at the top-left.
 2.	Name it whatever you want, but naming it "Ubuntu" will auto-config the setting of that screen.
 3.	If you didn't auto-config, select *Linux* from the first drop-down list, then *Ubuntu 32/64 bit* from the second. Click *Next*.
-4.	On this screen, you'll allocate RAM for the VM. *1GB is the absolute minimum, but it is reccomended to allocate 2GB to 4GB if you can*. Click *Next*.
+4.	On this screen, you'll allocate RAM for the VM. *1GB is the absolute minimum, but it is recommended to allocate 2GB to 4GB if you can*. Click *Next*.
 5.	This screen allows you to decide if you want to allocate Hard Drive space via a Virtual Hard Drive. Select *Create a Virtual Hard Disk Now*, then click *Create*.
 6.	Select *VDI (VirtualBox Disk Image)*, then *Next*.
 7.	If you want slightly better performance, select *Fixed Size*. Otherwise, leave it at *Dynamically Allocated*. Click *Next*.
-8.	Adjust the slider to the amount of hard drive space you want the VM to have. *You must have at least 8GB, though 20GB is reccomended.* Click *Create*.
+8.	Adjust the slider to the amount of hard drive space you want the VM to have. *You must have at least 8GB, though 20GB is recommended.* Click *Create*.
 
 ##### Installing the OS on the Virtual Machine
 
@@ -340,7 +340,7 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 ##### Installing the Guest Additions
 
-*The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.*
+*The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is recommended you install it.*
 
 1.	Download the *VirtualBox Extension Pack*. The download link can be found in Section 2.2.1.
 2.	Launch VirtualBox, Select *File*, then *Preferences*, *Extension*, and *Add New* (small blue box with yellow arrow).
@@ -355,11 +355,11 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 1.	Select *New* up at the top-left.
 2.	Name it whatever you want, but there's no auto-detect for "Kali."
 3.	Select *Linux* from the first drop-down list, then *Debian* from the second. Click *Next*.
-4.	On this screen, you'll allocate RAM for the VM. *1GB is the absolute minimum, but it is reccomended to allocate 2GB to 4GB if you can*. Click *Next*.
+4.	On this screen, you'll allocate RAM for the VM. *1GB is the absolute minimum, but it is recommended to allocate 2GB to 4GB if you can*. Click *Next*.
 5.	This screen allows you to decide if you want to allocate Hard Drive space via a Virtual Hard Drive. Select *Create a Virtual Hard Disk Now*, then click *Create*.
 6.	Select *VDI (VirtualBox Disk Image)*, then *Next*.
 7.	If you want slightly better performance, select *Fixed Size*. Otherwise, leave it at *Dynamically Allocated*. Click *Next*.
-8.	Adjust the slider to the amount of hard drive space you want the VM to have. *You must have at least 10GB, though 20GB is reccomended.* Click *Create*.
+8.	Adjust the slider to the amount of hard drive space you want the VM to have. *You must have at least 10GB, though 20GB is recommended.* Click *Create*.
 
 ##### Installing the OS on the Virtual Machine
 
@@ -376,7 +376,7 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 9.	If a screen appears, asking for a Time Zone, select *Eastern*, then click *Continue*.
 10.	A list of installation options will appear. Select *Guided - Use entire Disk*, then click *Continue*.
 11.	There's only one item in the list for installing the OS. Select it, then click *Continue*.
-12.	Select *All Files in One Partition (Reccomended for New Users)*, then click *Continue*.
+12.	Select *All Files in One Partition (recommended for New Users)*, then click *Continue*.
 13.	Do not change any of the settings, click *Continue*.
 14.	Confirm the Virtual Hard Disk changes by selecting *Yes*. Click *Continue*.
 15.	The installation will now begin, after it's completed, select *Yes* for network downloading.
@@ -405,11 +405,25 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 *Unlike VirtualBox, you must have the ISO before you make the VM.*
 
-1.	
+1.	Click *Create a New Virtual Machine*. When the New VM Wizard appears, select *Typical (recommended) Install*, then click *Next*.
+2.	Select *Installer Disc Image (iso)* and set the location to the ISO File. You'll notice the message that says *The Operating System will Use Easy Install*.
+3.	Click *Next*. Set your name, username, and password. Click *Next.*
+4.	Name the Virtual Machine and set the location if needed. Click *Next*.
+5.	Set the Hard Disk size. 10GB is the minimum, 20GB is recommended. Click *Next*.
+6.	Review the settings, then click *Finish*. Keep *Power on this Virtual Machine after Creation* selected.
 
 ##### Installing the OS on the Virtual Machine
 
+1.	VMWare has a feature called *Easy Install*, which sets the VM up according to the info you set earlier. Just sit back and wait.
+2.	As soon as the splines have finished reticulating, the VM will automatically reboot.
+
 ##### Logging in for the First Time
+
+1.	If you are not automatically rebooting, select the VM you just installed the OS on from the left panel.
+2.	Click the *Power on this Virtual Machine* button.
+3.	Wait for the GUI to appear. Type the password you set during VM creation.
+
+At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
 
 #### For Kali Linux:
 
@@ -417,11 +431,60 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 *Unlike VirtualBox, you must have the ISO before you make the VM.*
 
-1.	
+1.	Click *Create a New Virtual Machine*. When the New VM Wizard appears, select *Typical (recommended) Install*, then click *Next*.
+2.	Select *Installer Disc Image (iso)* and set the location to the ISO File. Click *Next*.
+3.	Set the Guest OS as *Linux*. Set the Version as *Debian 8.x 64-bit*.
+4.	Name the Virtual Machine and set the location if needed. Click *Next*.
+5.	Set the Hard Disk size. 10GB is the minimum, 20GB is recommended. Click *Next*.
+6.	Before finishing the creation wizard, select *Customize Hardware...*, then select the *Memory* section from the left pane.
+7.	Adjust the slider to at least 1GB (1024MB). 2GB to 4GB is recommended.
+8.	Review the settings, then click *Finish*.
 
 ##### Installing the OS on the Virtual Machine
 
+1.	The VM should have appeared in a new tab. If it hasn't, select it from the left pane.
+2.	Select *Power on this Virtual Machine*.
+3. 	A splash screen will appear, with a list of options. Select *Graphical Install*, then press enter.
+4. 	Once the GUI comes up, select *English*, then click *Continue*.
+5. 	Select your country (*United States*), then click *Continue*.
+6.	Select your keyboards map (*American English*), then click *Continue*.
+7.	After some component loading, type in your computers Hostname. This is inconsequential, so name it whatever you want. Click *Continue*.
+8. 	Set the root password, then click *Continue*.
+9.	If a screen appears, asking for a Time Zone, select *Eastern*, then click *Continue*.
+10.	A list of installation options will appear. Select *Guided - Use entire Disk*, then click *Continue*.
+11.	There's only one item in the list for installing the OS. Select it, then click *Continue*.
+12.	Select *All Files in One Partition (recommended for New Users)*, then click *Continue*.
+13.	Do not change any of the settings, click *Continue*.
+14.	Confirm the Virtual Hard Disk changes by selecting *Yes*. Click *Continue*.
+15.	The installation will now begin, after it's completed, select *Yes* for network downloading.
+16.	If you have any proxy info, enter it there. If not, leave it blank. Click *Continue*.
+17.	Select *Yes* to install GRUB, then click *Continue*.
+18.	In the next list, there should be only one item besides *Enter Device Manually*. Select it (it should look similar to */dev/sda (gibberish)*). Click *Continue*.
+19.	The next screen should notify you that the installation is completed. Click *Continue*.
+20.	The VM will automatically reboot.
+
 ##### Logging in for the First Time
+
+1.	If you are not automatically rebooting, select the VM you just installed the OS on from the left panel. Select *Power on this virtual machine*.
+2. 	Select *Kali GNU/Linux* from the GRUB menu or simply wait for the computer to do it for you.
+3.	Wait for the GUI to appear, then enter *root* as the username. Click *Next*.
+4. 	Enter the password you set during install. Then select *Sign In*.
+
+##### Installing VMWare-Specific Drivers
+
+*VMWare automatically installs some drivers for Ubuntu, but it must be manually done for Kali Linux. It isn't required, but it is highly recommended.*
+
+1.	After logging in, click the *VM* menu from the VMWare toolbar, and select *Install VMWare Tools...*.
+2.	In a moment a disc icon will appear on the Desktop titled *VMWare Tools*. Open it.
+3.	In the virtual CD, there should be a `tar.gz` file that begins with "VMWareTools". Drag it to the Desktop.
+4.	Close out of the CD file window. Right click the Desktop and select *Open Terminal*.
+5.	In the terminal, type `cd Desktop` (case sensitive) to change the directory to the Desktop. 
+6.	In the terminal, type `tar -zxvf <name of tar.gz>` to extract the archive.
+7.	After the process completes, type `cd vmware-tools-distrib` to move into the driver directory.
+8.	Type `./vmware-install.pl` to begin installation. **Press enter for all options given. Do not type anything.**
+9.	After the process is done, type `reboot` to reboot the computer and utilize the new drivers.
+
+At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
 
 ### 3.1.3 Making a VM in Hyper-V
 
@@ -450,12 +513,12 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 1.	If the center panel has a section titled *Introduction*, then click the computer in the left panel under *Hyper-V Manager*.
 2.	On the right panel, click *New*, then click *Virtual Machine...*.
 3.	Click *Next* on the introduction screen. Name the new virtual machine whatever you want, then click *Next*.
-4.	Selecting *Generation 2* is highly reccomended. Click *Next*.
-5.	You must allocate at least 1GB of RAM. Allocating 2GB to 4GB is reccomended if you can afford it.
+4.	Selecting *Generation 2* is highly recommended. Click *Next*.
+5.	You must allocate at least 1GB of RAM. Allocating 2GB to 4GB is recommended if you can afford it.
 6.	Leaving *Use Dynamic Memory for this virtual machine* will generally lessen the impact on computer performance, but will slow the VM slightly. Select it if you want, then click *Next*.
 7.	Select the Virtual Switch you made earlier from the drop-down list. Click *Next*.
 8.	Select *Create a New Virtual Hard Disk* and name it whatever you want. If you want to change the location, do so.
-9.	**The size of the Virtual Hard Disk will be automatically set to the size of your Hard Drive's free space. Resize it or you won't have any free space on your computer.** At least 10GB should be allocated, 20GB is reccomended.
+9.	**The size of the Virtual Hard Disk will be automatically set to the size of your Hard Drive's free space. Resize it or you won't have any free space on your computer.** At least 10GB should be allocated, 20GB is recommended.
 10.	Select *Install an Operating System from a Bootable Image File*, and set the *Image File (.iso)* prompt to where your downloaded ISO file is. Click *Next*.
 11.	Review the VM's settings, then click *Finish*.
 
@@ -497,6 +560,8 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 5.	Save the file and exit. In the terminal, type the command `updte-grub` and type the password when asked.
 6.	Type the command `reboot` in the terminal to restart the computer.
 
+At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
+
 #### For Kali Linux:
 
 ##### Creating the Virtual Machine
@@ -507,11 +572,11 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 2.	On the right panel, click *New*, then click *Virtual Machine...*.
 3.	Click *Next* on the introduction screen. Name the new virtual machine whatever you want, then click *Next*.
 4.	**Kali Linux will not install on a Generation 2 VM. Do not select it. The developers of Kali are working on a fix to this situation.**
-5.	You must allocate at least 1GB of RAM. Allocating 2GB to 4GB is reccomended if you can afford it.
+5.	You must allocate at least 1GB of RAM. Allocating 2GB to 4GB is recommended if you can afford it.
 6.	**Unselect *Use Dynamic Memory for this Virtual Machine*** , then click *Next*.
 7.	Select the Virtual Switch you made earlier from the drop-down list. Click *Next*.
 8.	Select *Create a New Virtual Hard Disk* and name it whatever you want. If you want to change the location, do so.
-9.	**The size of the Virtual Hard Disk will be automatically set to the size of your Hard Drive's free space. Resize it or you won't have any free space on your computer.** At least 10GB should be allocated, 20GB is reccomended.
+9.	**The size of the Virtual Hard Disk will be automatically set to the size of your Hard Drive's free space. Resize it or you won't have any free space on your computer.** At least 10GB should be allocated, 20GB is recommended.
 10.	Select *Install an Operating System from a Bootable CD/DVD-ROM*, select and set the *Image File (.iso)* prompt to where your downloaded ISO file is. Click *Next*.
 11.	Review the VM's settings, then click *Finish*.
 
@@ -527,10 +592,10 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 8.	If a screen appears, asking for a Time Zone, select *Eastern*, then click *Continue*.
 9.	A list of installation options will appear. Select *Guided - Use entire Disk*, then click *Continue*.
 10.	There's only one item in the list for installing the OS. Select it, then click *Continue*.
-11.	Select *All Files in One Partition (Reccomended for New Users)*, then click *Continue*.
+11.	Select *All Files in One Partition (recommended for New Users)*, then click *Continue*.
 12.	Do not change any of the settings, click *Continue*.
 13.	Confirm the Virtual Hard Disk changes by selecting *Yes*. Click *Continue*.
-14.	The installation will now begin; afterwards, if you have an ISP that requires you to register your devices then select *No*. Otherwise, select *Yes* for network downloading.
+14.	The installation will now begin; afterwards *Yes* for network downloading.
 15.	If you have any proxy info, enter it there. If not, leave it blank. Click *Continue*.
 16.	Select *Yes* to install GRUB, then click *Continue*.
 17.	In the next list, there should be only one item besides *Enter Device Manually*. Select it (it should look similar to */dev/sda (gibberish)*). Click *Continue*.
@@ -552,6 +617,8 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 4.	At the end of the line, add `splash video=hyperv_fb:<width>x<height>`. If you wanted a standard laptop resolution, the line would read `GRUB_CMDLINE_LINUX_DEFAULT="quite splash video=hyperv_fb:1366x768"`.
 5.	Save the file and exit. In the terminal, type the command `updte-grub` and type the password when asked.
 6.	Type the command `reboot` in the terminal to restart the computer.
+
+At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
 
 ## 3.2 Making a Bootable USB with Persistence
 
