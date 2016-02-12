@@ -441,7 +441,7 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 6.	A popup will warn you that your internet connection may drop for a moment. Click *Yes*.
 7.	Allow the process to complete and exit the Virtual Switch Manager.
 
-#### For Ubuntu
+#### For Ubuntu:
 
 ##### Creating the Virtual Machine and Disabling Security
 
@@ -493,7 +493,7 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 2.	Type the command `sudo gedit /etc/default/grub` and enter your password when asked.
 3.	Find the line that says `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"`
 4.	At the end of the line, add `video=hyperv_fb:<width>x<height>`. If you wanted a standard laptop resolution, the line would read `GRUB_CMDLINE_LINUX_DEFAULT="quite splash video=hyperv_fb:1366x768"`.
-5.	Save the file and exit. In the terminal, type the command `sudo updte-grub` and type the password when asked.
+5.	Save the file and exit. In the terminal, type the command `updte-grub` and type the password when asked.
 6.	Type the command `reboot` in the terminal to restart the computer.
 
 #### For Kali Linux:
@@ -541,6 +541,17 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 1.	Click the *Connect...* button if you closed the window after installation. Click the *Start* button in the VM connection window.
 2.	Wait for the GUI to appear. Enter *root* as the username, then enter the password you set earlier.
 
+##### Changing Screen Resolution
+
+*If the resolution of the VM is bothering you, these steps are here to fix the problem.*
+
+1.	Right click the desktop and select *Open Terminal* to open a new terminal.
+2.	Type the command `gedit /etc/default/grub` and enter your password when asked.
+3.	Find the line that says `GRUB_CMDLINE_LINUX_DEFAULT="quiet"`
+4.	At the end of the line, add `splash video=hyperv_fb:<width>x<height>`. If you wanted a standard laptop resolution, the line would read `GRUB_CMDLINE_LINUX_DEFAULT="quite splash video=hyperv_fb:1366x768"`.
+5.	Save the file and exit. In the terminal, type the command `updte-grub` and type the password when asked.
+6.	Type the command `reboot` in the terminal to restart the computer.
+
 ## 3.2 Making a Bootable USB with Persistence
 
 **The required items for this section is:**  
@@ -557,13 +568,13 @@ Hyper-V allows for VMs to access the internet, but it must be enabled first.
 
 ##### If your Computer Shipped with Windows 8 or Later:
 
-**For Windows 8:**  
+***For Windows 8:***  
 Instructions
 
-**For Windows 8.1:**  
+***For Windows 8.1:***  
 Instructions
 
-**For Windows 10:**  
+***For Windows 10:***  
 Instructions
 
 #### For Ubuntu:
@@ -615,13 +626,13 @@ Instructions
 
 ##### If your Computer Shipped with Windows 8 or Later:
 
-**For Windows 8:**  
+***For Windows 8:***  
 Instructions
 
-**For Windows 8.1:**  
+***For Windows 8.1:***  
 Instructions
 
-**For Windows 10:**  
+***For Windows 10:***  
 Instructions
 
 #### Using a DVD:
