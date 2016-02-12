@@ -284,7 +284,7 @@ Must Download Software to Use | Must Download Software to Use | Can Use Tools th
 *	The Hypervisor of your choice.
 *	The ISO file of the OS of your choice.
 
-This section assumes you have been able to install the hypervisor of your choice correctly.
+*This section assumes you have been able to install the hypervisor of your choice correctly.*
 
 ### 3.1.1 Making a VM in VirtualBox
 
@@ -292,7 +292,7 @@ This section assumes you have been able to install the hypervisor of your choice
 
 ##### Installing the Guest Additions
 
-The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.
+*The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.*
 
 1.	Download the *VirtualBox Extension Pack*. The download link can be found in Section 2.2.1.
 2.	Launch VirtualBox, Select *File*, then *Preferences*, *Extension*, and *Add New* (small blue box with yellow arrow).
@@ -302,7 +302,7 @@ The guest extensions add some functionality that makes using a VirtualBox VM eas
 
 ##### Creating the Virtual Machine
 
-These steps create the Virtual Machine that will soon run the OS.
+*These steps create the Virtual Machine that will soon run the OS.*
 
 1.	Select *New* up at the top-left.
 2.	Name it whatever you want, but naming it "Ubuntu" will auto-config the setting of that screen.
@@ -315,7 +315,6 @@ These steps create the Virtual Machine that will soon run the OS.
 
 ##### Installing the OS on the Virtual Machine
 
-By now, the new VM should appear on the main window. However, there's no OS on it, making it unusable. Let's fix that.  
 *By now you should have downloaded your ISO. Don't continue the instructions until it is completely downloaded.*
 
 1.	Select the newly added VM, then select *Start*.
@@ -330,7 +329,7 @@ By now, the new VM should appear on the main window. However, there's no OS on i
 
 ##### Logging in for the First Time
 
-At this point the OS is fully installed on the VM and now should boot into Ubuntu when launched.
+*At this point the OS is fully installed on the VM and now should boot into Ubuntu when launched.*
 
 1. 	Select the VM that you just installed the OS on, then click *Start*.
 2. 	Wait for the GUI to load, then enter your username you set, and the corresponding password.
@@ -341,7 +340,7 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 ##### Installing the Guest Additions
 
-The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.
+*The guest extensions add some functionality that makes using a VirtualBox VM easier, like adding fullscreen. It is reccomended you install it.*
 
 1.	Download the *VirtualBox Extension Pack*. The download link can be found in Section 2.2.1.
 2.	Launch VirtualBox, Select *File*, then *Preferences*, *Extension*, and *Add New* (small blue box with yellow arrow).
@@ -351,7 +350,7 @@ The guest extensions add some functionality that makes using a VirtualBox VM eas
 
 ##### Creating the Virtual Machine
 
-These steps create the Virtual Machine that will soon run the OS.
+*These steps create the Virtual Machine that will soon run the OS.*
 
 1.	Select *New* up at the top-left.
 2.	Name it whatever you want, but there's no auto-detect for "Kali."
@@ -364,7 +363,6 @@ These steps create the Virtual Machine that will soon run the OS.
 
 ##### Installing the OS on the Virtual Machine
 
-By now, the new VM should appear on the main window. However, there's no OS on it, making it unusable. Let's fix that.  
 *By now you should have downloaded your ISO. Don't continue the instructions until it is completely downloaded.*
 
 1.	Select the newly added VM, then select *Start*.
@@ -390,7 +388,7 @@ By now, the new VM should appear on the main window. However, there's no OS on i
 
 ##### Logging in for the First Time
 
-At this point the OS is fully installed on the VM and now should boot into Ubuntu when launched.
+*At this point the OS is fully installed on the VM and now should boot into Kali Linux when launched.*
 
 1. 	Select the VM that you just installed the OS on, then click *Start*.
 2. 	Select *Kali GNU/Linux* from the GRUB menu or simply wait for the computer to do it for you.
@@ -405,6 +403,10 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 ##### Creating the Virtual Machine
 
+*Unlike VirtualBox, you must have the ISO before you make the VM.*
+
+1.	
+
 ##### Installing the OS on the Virtual Machine
 
 ##### Logging in for the First Time
@@ -413,27 +415,131 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 ##### Creating the Virtual Machine
 
+*Unlike VirtualBox, you must have the ISO before you make the VM.*
+
+1.	
+
 ##### Installing the OS on the Virtual Machine
 
 ##### Logging in for the First Time
 
 ### 3.1.3 Making a VM in Hyper-V
 
+*Please note the term "disabling security" refers to the VM, not the host computer.*
+
+*Hyper-V is set up so exiting the VM window will not shut down the VM. To shut it down, click the Shut Down or Turn Off buttons located in the VM window as well as the right panel Hyper-V Manager window.*
+
+#### Allowing VMs to access the internet
+
+Hyper-V allows for VMs to access the internet, but it must be enabled first.
+
+1.	If the center panel has a section titled *Introduction*, then click the computer in the left panel under *Hyper-V Manager*.
+2.	On the right panel, click *Virtual Switch Manager...*.
+3.	On the *New virtual network switch* panel, select *External* and then click *Create Virtual Switch*.
+4.	Name the switch whatever you want, but make sure that the *Connection Type* section has *External* selected, as well as the name of the device you want to use for internet connection selected from the dropdown list.
+5.	Leave *Allow Management Operating System to Share this Network Adapter* enabled. Click *OK*.
+6.	A popup will warn you that your internet connection may drop for a moment. Click *Yes*.
+7.	Allow the process to complete and exit the Virtual Switch Manager.
+
 #### For Ubuntu
 
 ##### Creating the Virtual Machine and Disabling Security
 
+*At this point, the ISO file of your choice should be completely downloaded*.
+
+1.	If the center panel has a section titled *Introduction*, then click the computer in the left panel under *Hyper-V Manager*.
+2.	On the right panel, click *New*, then click *Virtual Machine...*.
+3.	Click *Next* on the introduction screen. Name the new virtual machine whatever you want, then click *Next*.
+4.	Selecting *Generation 2* is highly reccomended. Click *Next*.
+5.	You must allocate at least 1GB of RAM. Allocating 2GB to 4GB is reccomended if you can afford it.
+6.	Leaving *Use Dynamic Memory for this virtual machine* will generally lessen the impact on computer performance, but will slow the VM slightly. Select it if you want, then click *Next*.
+7.	Select the Virtual Switch you made earlier from the drop-down list. Click *Next*.
+8.	Select *Create a New Virtual Hard Disk* and name it whatever you want. If you want to change the location, do so.
+9.	**The size of the Virtual Hard Disk will be automatically set to the size of your Hard Drive's free space. Resize it or you won't have any free space on your computer.** At least 10GB should be allocated, 20GB is reccomended.
+10.	Select *Install an Operating System from a Bootable Image File*, and set the *Image File (.iso)* prompt to where your downloaded ISO file is. Click *Next*.
+11.	Review the VM's settings, then click *Finish*.
+
+***These next settings are only doable if you opted to make a Generation 2 VM. Skip these if you made a Generation 1 VM.***  
+12.	After the process completes, select the VM from the center panel, then click *Settings...* on the right panel.
+13.	Select *Security* from the side panel, then uncheck the box that says *Enable Secure Boot*. Click *OK*.
+
 ##### Installing the OS on the Virtual Machine
 
+*In Hyper-V, the VM uses a different MAC address than the host computer. If this causes your ISP to not provide a connection to the VM, you **must** use a web browser on the VM and set up your connection between steps 2 and 3.*
+
+1.	Select the VM from the center panel; click *Start*, then click *Connect...* from the right panel.
+2.	Once the GRUB menu appears, select *Try Ubuntu without Installing*, then press enter.
+3.	Select the Network Icon on the task bar (two arrows moving in different directions), and select the network type you want (it should be *Wired Connection 1*).
+4.	Exit the *Keyboard Shortcuts* window and launch *Install Ubuntu <version>*.
+5.	On the *Welcome* screen, make sure *English* is selected, then click *Continue*.
+6.	If the VM is connected to the Internet, select *Download Updates while Installing*. Choosing *Install Third-Party Software* is optional. Click *Continue*.
+7.	Select *Erase Disk and Install Ubuntu*. Click *Continue*. Click *Continue* again if a summary of hardware changes appears.
+8.	Select the Time Zone you live in. Click *Continue*.
+9.	Select the configuration of your keyboard. It should be *English (US)* and *English (US)* as default. Click *Continue*.
+10.	Set your Name (doesn't have to be real), username, and password. Click *Continue*.
+11.	Wait for the installation to finish. Once it has, select *Restart Now*.
+12.	Wait for the text to appear on the screen, then click the *Turn Off* icon at the top. It is grey with a black sqare.
+
 ##### Logging in for the First Time
+
+1.	Click the *Connect...* button if you closed the window after installation. Click the *Start* button in the VM connection window.
+2.	Wait for the GUI to appear. Enter your password.
+
+##### Changing Screen Resolution
+
+*If the resolution of the VM is bothering you, these steps are here to fix the problem.*
+
+1.	Press `Ctrl+Alt+T` to open a new terminal.
+2.	Type the command `sudo gedit /etc/default/grub` and enter your password when asked.
+3.	Find the line that says `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"`
+4.	At the end of the line, add `video=hyperv_fb:<width>x<height>`. If you wanted a standard laptop resolution, the line would read `GRUB_CMDLINE_LINUX_DEFAULT="quite splash video=hyperv_fb:1366x768"`.
+5.	Save the file and exit. In the terminal, type the command `sudo updte-grub` and type the password when asked.
+6.	Type the command `reboot` in the terminal to restart the computer.
 
 #### For Kali Linux:
 
-##### Creating the Virtual Machine and Disabling Security
+##### Creating the Virtual Machine
+
+*At this point, the ISO file of your choice should be completely downloaded*.
+
+1.	If the center panel has a section titled *Introduction*, then click the computer in the left panel under *Hyper-V Manager*.
+2.	On the right panel, click *New*, then click *Virtual Machine...*.
+3.	Click *Next* on the introduction screen. Name the new virtual machine whatever you want, then click *Next*.
+4.	**Kali Linux will not install on a Generation 2 VM. Do not select it. The developers of Kali are working on a fix to this situation.**
+5.	You must allocate at least 1GB of RAM. Allocating 2GB to 4GB is reccomended if you can afford it.
+6.	**Unselect *Use Dynamic Memory for this Virtual Machine*** , then click *Next*.
+7.	Select the Virtual Switch you made earlier from the drop-down list. Click *Next*.
+8.	Select *Create a New Virtual Hard Disk* and name it whatever you want. If you want to change the location, do so.
+9.	**The size of the Virtual Hard Disk will be automatically set to the size of your Hard Drive's free space. Resize it or you won't have any free space on your computer.** At least 10GB should be allocated, 20GB is reccomended.
+10.	Select *Install an Operating System from a Bootable CD/DVD-ROM*, select and set the *Image File (.iso)* prompt to where your downloaded ISO file is. Click *Next*.
+11.	Review the VM's settings, then click *Finish*.
 
 ##### Installing the OS on the Virtual Machine
 
+1.	Select the VM from the center panel; click *Start*, then click *Connect...* from the right panel.
+2. 	A splash screen will appear, with a list of options. Select *Graphical Install*, then press enter.
+3. 	Once the GUI comes up, select *English*, then click *Continue*.
+4. 	Select your country (*United States*), then click *Continue*.
+5.	Select your keyboards map (*American English*), then click *Continue*.
+6.	After some component loading, type in your computers Hostname. This is inconsequential, so name it whatever you want. Click *Continue*.
+7. 	Set the root password, then click *Continue*.
+8.	If a screen appears, asking for a Time Zone, select *Eastern*, then click *Continue*.
+9.	A list of installation options will appear. Select *Guided - Use entire Disk*, then click *Continue*.
+10.	There's only one item in the list for installing the OS. Select it, then click *Continue*.
+11.	Select *All Files in One Partition (Reccomended for New Users)*, then click *Continue*.
+12.	Do not change any of the settings, click *Continue*.
+13.	Confirm the Virtual Hard Disk changes by selecting *Yes*. Click *Continue*.
+14.	The installation will now begin; afterwards, if you have an ISP that requires you to register your devices then select *No*. Otherwise, select *Yes* for network downloading.
+15.	If you have any proxy info, enter it there. If not, leave it blank. Click *Continue*.
+16.	Select *Yes* to install GRUB, then click *Continue*.
+17.	In the next list, there should be only one item besides *Enter Device Manually*. Select it (it should look similar to */dev/sda (gibberish)*). Click *Continue*.
+18.	The next screen should notify you that the installation is completed. Click *Continue*.
+19.	The VM will automatically reboot.
+
 ##### Logging in for the First Time
+
+1.	Click the *Connect...* button if you closed the window after installation. Click the *Start* button in the VM connection window.
+2.	Wait for the GUI to appear. Enter *root* as the username, then enter the password you set earlier.
 
 ## 3.2 Making a Bootable USB with Persistence
 
@@ -518,31 +624,15 @@ Instructions
 **For Windows 10:**  
 Instructions
 
-#### For Ubuntu:
+#### Using a DVD:
 
-##### For DVD:
-
-##### For USB:
-
-#### For Kali Linux:
-
-##### For DVD:
-
-##### For USB:
+#### Using a USB:
 
 ### 3.3.2 Creating the Installer on Linux
 
-#### For Ubuntu:
+#### Using a DVD:
 
-##### For DVD:
-
-##### For USB:
-
-#### For Kali Linux:
-
-##### For DVD:
-
-##### For USB:
+#### Using a USB:
 
 ### 3.3.3 Installing the OS
 
