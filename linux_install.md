@@ -644,18 +644,18 @@ The easiest way to determine if your computer has Secure Boot enabled is by rest
 *Disabling Secure Boot in Windows required the use of Advanced Startup to get into the BIOS/UEFI settings.*
 
 ***For Windows 8:***  
-1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
-2.	Click *General*. Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.  
+2.	Click *General*. Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.  
 
 ***For Windows 8.1:***  
-1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
-2.	Click *Update and Recovery*, then click *Recovery*.
-3.	Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.  
+2.	Click *Update and Recovery*, then click *Recovery*.  
+3.	Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.  
 
 ***For Windows 10:***  
-1.	Open the Start Menu, then click *Settings*.
-2.	Click *Update and Security*, then click *Recovery*.
-3.	Under *Advanced Startup*, then under that section, click *Restart Now*. 
+1.	Open the Start Menu, then click *Settings*.  
+2.	Click *Update and Security*, then click *Recovery*.  
+3.	Under *Advanced Startup*, then under that section, click *Restart Now*.  
 
 ##### Accessing BIOS
 
@@ -679,7 +679,8 @@ The easiest way to determine if your computer has Secure Boot enabled is by rest
 ##### Installing the OS on a USB
 
 1.	Plug in the USB, and take note of what drive letter it is.
-2.	Launch PenDrive Linux Universal USB Installer.
+2.	Launch PenDrive Linux Universal USB Installer. A Terms of Service article will appear. Agree to the terms.
+3.	
 
 ##### Enabling Persistence
 
@@ -734,18 +735,18 @@ The easiest way to determine if your computer has Secure Boot enabled is by rest
 *Disabling Secure Boot in Windows required the use of Advanced Startup to get into the BIOS/UEFI settings.*
 
 ***For Windows 8:***  
-1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
-2.	Click *General*. Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.  
+2.	Click *General*. Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.  
 
 ***For Windows 8.1:***  
-1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
-2.	Click *Update and Recovery*, then click *Recovery*.
-3.	Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.  
+2.	Click *Update and Recovery*, then click *Recovery*.  
+3.	Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.  
 
 ***For Windows 10:***  
-1.	Open the Start Menu, then click *Settings*.
-2.	Click *Update and Security*, then click *Recovery*.
-3.	Under *Advanced Startup*, then under that section, click *Restart Now*. 
+1.	Open the Start Menu, then click *Settings*.  
+2.	Click *Update and Security*, then click *Recovery*.  
+3.	Under *Advanced Startup*, then under that section, click *Restart Now*.  
 
 ##### Accessing BIOS
 
