@@ -615,7 +615,7 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 2.	Type the command `gedit /etc/default/grub` and enter your password when asked.
 3.	Find the line that says `GRUB_CMDLINE_LINUX_DEFAULT="quiet"`
 4.	At the end of the line, add `splash video=hyperv_fb:<width>x<height>`. If you wanted a standard laptop resolution, the line would read `GRUB_CMDLINE_LINUX_DEFAULT="quite splash video=hyperv_fb:1366x768"`.
-5.	Save the file and exit. In the terminal, type the command `updte-grub` and type the password when asked.
+5.	Save the file and exit. In the terminal, type the command `update-grub` and type the password when asked.
 6.	Type the command `reboot` in the terminal to restart the computer.
 
 At this point, you now have a working Virtual Machine that can run the Binary Exploitation Workshop Exercises.
@@ -632,22 +632,54 @@ At this point, you now have a working Virtual Machine that can run the Binary Ex
 
 #### Disabling Secure Boot
 
-##### If your Computer Came with Windows 7 or Earlier:
+*Many current computers now come with Secure Boot enabled; this will essentially lock you out from accessing the boot options menu.
+The easiest way to determine if your computer has Secure Boot enabled is by restarting the computer and seeing if the startup splash screen gives you the option to load into the boot options menu.*
 
-##### If your Computer Shipped with Windows 8 or Later:
+*If you have this option, then skip this section. If not, then check what version of Windows you are running and follow the appropriate instructions.*
+
+*Windows 7 does not support Secure Boot, so this section can only be applied to computers running Windows 8 or later.*
+
+##### Accessing Advanced Startup
+
+*Disabling Secure Boot in Windows required the use of Advanced Startup to get into the BIOS/UEFI settings.*
 
 ***For Windows 8:***  
-Instructions
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
+2.	Click *General*. Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
 
 ***For Windows 8.1:***  
-Instructions
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
+2.	Click *Update and Recovery*, then click *Recovery*.
+3.	Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
 
 ***For Windows 10:***  
-Instructions
+1.	Open the Start Menu, then click *Settings*.
+2.	Click *Update and Security*, then click *Recovery*.
+3.	Under *Advanced Startup*, then under that section, click *Restart Now*. 
+
+##### Accessing BIOS
+
+*The option to disable secure boot is located in BIOS. These steps will get you there.*
+
+1.	Once Advanced Startup begins, click *Troubleshooting*.
+2.	Select *Advanced Options*.
+3.	There will be an option that reads *BIOS Firmware Settings* or *UEFI Firmware Settings*. Select it.
+4.	The computer will confirm that you will access the BIOS/UEFI settings. Click *Restart*.
+
+##### Disabling Secure Boot
+
+*Here's how to actually disable Secure Boot in BIOS.*
+
+1.	Move throughout the options menu until you find the option for *Secure Boot*. There's too many different ways to do this, but it will usually be located under the *Boot* or *Security* menu.
+2.	If the option can be changed, set *Secure Boot* to "Disabled." If it cannot be changed, set a Supervisor Password and see if that allows the change of the option. This is a known issue with certain ACER laptops.
+3.	Save the settings and exit. As the computer restarts, you should see options for BIOS/UEFI as well as the Boot Options menu. Take note of the button needed for Boot Options.
 
 #### For Ubuntu:
 
 ##### Installing the OS on a USB
+
+1.	Plug in the USB, and take note of what drive letter it is.
+2.	Launch PenDrive Linux Universal USB Installer.
 
 ##### Enabling Persistence
 
@@ -690,18 +722,47 @@ Instructions
 
 #### Disabling Secure Boot
 
-##### If your Computer Came with Windows 7 or Earlier:
+*Many current computers now come with Secure Boot enabled; this will essentially lock you out from accessing the boot options menu.
+The easiest way to determine if your computer has Secure Boot enabled is by restarting the computer and seeing if the startup splash screen gives you the option to load into the boot options menu.*
 
-##### If your Computer Shipped with Windows 8 or Later:
+*If you have this option, then skip this section. If not, then check what version of Windows you are running and follow the appropriate instructions.*
+
+*Windows 7 does not support Secure Boot, so this section can only be applied to computers running Windows 8 or later.*
+
+##### Accessing Advanced Startup
+
+*Disabling Secure Boot in Windows required the use of Advanced Startup to get into the BIOS/UEFI settings.*
 
 ***For Windows 8:***  
-Instructions
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
+2.	Click *General*. Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
 
 ***For Windows 8.1:***  
-Instructions
+1.	Open the Start Charms, click *Settings*, then click *Change PC Settings*.
+2.	Click *Update and Recovery*, then click *Recovery*.
+3.	Scroll down to *Advanced Startup*, then under that section, click *Restart Now*.
 
 ***For Windows 10:***  
-Instructions
+1.	Open the Start Menu, then click *Settings*.
+2.	Click *Update and Security*, then click *Recovery*.
+3.	Under *Advanced Startup*, then under that section, click *Restart Now*. 
+
+##### Accessing BIOS
+
+*The option to disable secure boot is located in BIOS. These steps will get you there.*
+
+1.	Once Advanced Startup begins, click *Troubleshooting*.
+2.	Select *Advanced Options*.
+3.	There will be an option that reads *BIOS Firmware Settings* or *UEFI Firmware Settings*. Select it.
+4.	The computer will confirm that you will access the BIOS/UEFI settings. Click *Restart*.
+
+##### Disabling Secure Boot
+
+*Here's how to actually disable Secure Boot in BIOS.*
+
+1.	Move throughout the options menu until you find the option for *Secure Boot*. There's too many different ways to do this, but it will usually be located under the *Boot* or *Security* menu.
+2.	If the option can be changed, set *Secure Boot* to "Disabled." If it cannot be changed, set a Supervisor Password and see if that allows the change of the option. This is a known issue with certain ACER laptops.
+3.	Save the settings and exit. As the computer restarts, you should see options for BIOS/UEFI as well as the Boot Options menu. Take note of the button needed for Boot Options.
 
 #### Using a DVD:
 
