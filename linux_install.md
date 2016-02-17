@@ -196,7 +196,8 @@ USB builds are completely portable, and there are just a few pieces of software 
 #### 2.3.2 Required Software for Making a Persistant Linux USB on Windows
 
 All software needed for a USB install comes already in Linux, but for the sake of clarity:  
-*	`dd` Terminal command
+*	(For USB) `dd` Terminal command
+*	(For DVD) `wodim` Terminal command
 *	GParted Disk Partitioner
 
 The syntax for the `dd` command will be given and explained later, but it simply erases the content of a drive/folder and overwrites it with the content of a folder/ISO.  
@@ -678,21 +679,73 @@ The easiest way to determine if your computer has Secure Boot enabled is by rest
 
 ##### Installing the OS on a USB
 
+*By now, you need to have the entire ISO downloaded. These instructions will make the USB boot the installable version of Ubuntu.*
+
 1.	Plug in the USB, and take note of what drive letter it is.
 2.	Launch PenDrive Linux Universal USB Installer. A Terms of Service article will appear. Agree to the terms.
-3.	
+3.	The first thing you need to do is select *Ubuntu* (under the *Ubuntu 32/64 bit* section) from the drop-down list.
+4.	Select *Browse* and navigate to and select the ISO you downloaded.
+5.	Select the correct drive letter from the second drop-down list.
+6.	Select the checkbox to enable formatting the drive.
+7.	Set the Persistent File slider as high as it can go. Select *Create*. If a "not enough space" error gets thrown, repeat the same steps, but lower the slider just a bit.
+8.	Wait for installation to complete. This can take several minutes.
+9.	Once installation completes, click *Close*.
 
 ##### Enabling Persistence
 
+1.	The USB should have persistence automatically enabled.
+
 ##### Using your USB
+
+1.	Shut down the computer, then plug the USB in.
+2.	Boot the computer up, and press the key that launches the Boot Options menu.
+3.	Select the USB boot option, then as the splash screen appears, select *Try Ubuntu without installing*.
+4.	It should load directly into a usable Ubuntu environment.
+
+*If you want to change the title of "Try Ubuntu without installing", then plug the USB drive into a running computer,
+ open /boot/grub/grub.cfg then edit the phrase to whatever you like.
+ Make sure to keep the carat (\^) character there.*
 
 #### For Kali Linux:
 
 ##### Installing the OS on a USB
 
+*By now, you need to have the entire ISO downloaded.*
+
+1.	Plug in the USB, and take note of what drive letter it is.
+2.	Launch PenDrive Linux Universal USB Installer. A Terms of Service article will appear. Agree to the terms.
+3.	The first thing you need to do is select *Kali Linux* (under the *Security and Penetration Testing* section) from the drop-down list.
+4.	Select *Browse* and navigate to and select the ISO you downloaded.
+5.	Select the correct drive letter from the second drop-down list.
+6.	Select the checkbox to enable formatting the drive.
+7.	Select *Create*. Wait for installation to complete. This can take several minutes.
+8.	Once installation completes, click *Close*.
+
 ##### Enabling Persistence
 
+*While the "Live USB Persistence" option can be selected, it won't actually be usuable until these steps are taken.
+
+1.	Launch MiniTool Partition Wizard, then select *Launch Application*.
+2.	Select the USB Partition, then select *Move/Resize*.
+3.	Dragging the slider from the right, shrink the partition as much as possible. Click *OK*.
+4.	Select the newly made unallocated space and select *Create*.
+5.	Set the File System as *Ext4*, set it as *Primary*, then name it `persistence`. Click *OK*.
+6.	Click *Apply* then wait for the process to complete.
+7.	Shut down the computer, then make sure the USB is plugged in.
+8.	Boot the computer up, and press the key that launches the Boot Options menu.
+9.	Select the entry that boots from USB, then once the splash screen is, select *Live USB Persistence*.
+10. Once it boots up, open the second partition, named `persistence`.
+11.	Right click in the file explorer window that appeared and select *Open Terminal*.
+12.	In the terminal, type `echo "/ union" > persistence.conf` and press Enter.
+13.	Type `reboot` and press Enter. The computer should now restart.
+
 ##### Using your USB
+
+1.	Shut down the computer, then make sure the USB is plugged in.
+2.	Boot the computer up, and press the key that launches the Boot Options menu.
+3.	Select the entry that boots from USB, then once the splash screen is, select *Live USB Persistence*.
+
+*At this point, the "persistence" drive will disappear from the desktop and will now be used to hold peristent data.*
 
 ### 3.2.2 Using Linux to Install
 
